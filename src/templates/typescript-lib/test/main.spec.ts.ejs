@@ -1,0 +1,12 @@
+import {beforeEach, describe, expect, it} from 'vitest'
+import {<%= props.PackageName %>} from "../src";
+
+describe('<%= props.PackageName %>', () => {
+
+  beforeEach(() => {})
+
+  it('should create instance', () => {
+    const <%= props.packageName %> = new <%= props.PackageName %>();
+    expect(<%= props.packageName %>).toBeDefined();
+  });
+});
