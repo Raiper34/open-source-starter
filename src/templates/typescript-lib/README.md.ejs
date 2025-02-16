@@ -14,33 +14,39 @@
 TODO
 
 ### Content
-- [🚀 Instalation](#-instalation)
+- [🚀 Installation](#-installation)
 - [📚 Documentation](#-documentation)
 - [💻 Usage](#-usage)
-- [🌐 Usage in browser](#usage-in-browser)
+    - [🌐 Browser](#-browser)
 - [📖 License](#-license)
 
-# 🚀 Instalation
-Install library using npm `npm install <%= props.package_name %> --save` and import main class
-into your code base `import {<%= props.PackageName %>} from '<%= props.package_name %>';` .
+# 🚀 Installation
+Install **<%= props.PackageName %>** with npm
+```sh
+npm install <%= props.package_name %> --save
+```
+or with jsdelivr
+```html
+<script src="https://cdn.jsdelivr.net/npm/<%= props.package_name %>@0.0.0/dist/<%= props.package_name %>.iife.js"></script>
+```
 
 # 📚 Documentation
-For more details and complete documentation check: https://<%= props.package_name %>.netlify.app/
+[Documentation](https://<%= props.package_name %>.netlify.app/)
 
 # 💻 Usage
 First instantiate class with config, or without config.
 TODO
 
-# 🌐 Usage in browser
+## 🌐 Browser
 You can also use this library in the browser without compiling using jsDelivr.
 Import script into HTML file, and you can access classes through the global `<%= props.packageName %>` object.
 ```html
-<script src="https://cdn.jsdelivr.net/npm/<%= props.package_name %>/dist/browser-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/<%= props.package_name %>@0.0.0/dist/<%= props.package_name %>.iife.js"></script>
 <script>
   const lib = new <%= props.packageName %>.<%= props.PackageName %>();
   // TODO
 </script>
 ```
 
-# 📖 License
-MIT
+# ⚖️ License
+[MIT](https://choosealicense.com/licenses/mit/)
